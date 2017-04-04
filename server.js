@@ -81,11 +81,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articlename', function (req, res) {
-    //articlename == article-one
-    //articles[articlename] == {} content object for article one
-   var articlename = req.parans.articlename;
-  res.send(createTemplate(articles[articlename]));
+app.get('/articleName', function (req, res) {
+    //articleName == article-one
+    //articles[articleName] == {} content object for article one
+   var articleName = req.parans.articleName;
+  res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
