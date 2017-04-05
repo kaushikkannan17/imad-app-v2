@@ -6,12 +6,11 @@ var counter = 0;
      
      // Make a request to the counter endpoint
      
-     // Capture the response qand store it in a variable
+     // Capture the response and store it in a variable
      
      // Render the variable in the correct span
-     
      counter = counter + 1;
-     var span = document.getElementById("counter");
+     var span = document.getElementById("count");
      span.innerHTML = counter.toString();
 };
      
