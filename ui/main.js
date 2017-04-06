@@ -52,4 +52,4 @@ var button = document.getElementById("counter");
      var name = nameInput.value;
      request.open('GET', 'http://kaushikkannan17.imad.hasura-app.io/submit-name?name=' + name, true);
      request.send(null);
-};                                                                                                                                                                                                                                                                                                                                                                                                                                          
+};             
