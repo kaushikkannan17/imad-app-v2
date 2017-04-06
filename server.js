@@ -32,7 +32,7 @@ var articles = {
     </p>` 
 },
     'article-three' : {
-        title: "Article Three| Kaushik Kannan",
+    title: "Article Three| Kaushik Kannan",
     heading: "Article three",
     date: "Feb 18,2017",
     content: `
