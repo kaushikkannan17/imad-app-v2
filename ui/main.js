@@ -1,4 +1,4 @@
-// Counter code
+    // Counter code
 var button = document.getElementById("counter");
 
  button.onclick = function () {
@@ -16,9 +16,9 @@ var button = document.getElementById("counter");
                     span.innerHTML = counter.toString();
                 }
             }
-            // Not done yet
+                // Not done yet
         };
-     // Make the request
+             // Make the request
      request.open('GET', 'http://kaushikkannan17.imad.hasura-app.io/counter', true);
      request.send(null);
 };
@@ -38,7 +38,8 @@ var button = document.getElementById("counter");
                 if(request.status === 200); {
                     // Capture the names and render it as a list
          var names = request.responseText;
-         var list =  JSON.parse(names);
+         names=  JSON.parse(names);
+         var list = '';                                                                                                         
          for(var i= 0; i< names.length; i++){
              list += '<li>' + names[i] + '</li>';
          }
@@ -46,9 +47,9 @@ var button = document.getElementById("counter");
          ul.innerHTML = list;
                 }
             }
-            // Not done yet
+        // Not done yet
         };
-     // Make the request
-     request.open('GET', 'http://kaushikkannan17.imad.hasura-app.io/submit-name?name=' + name, true);
+        // Make the request
+        request.open('GET', 'http://kaushikkannan17.imad.hasura-app.io/submit-name?name=' + name, true);
      request.send(null);
-};
+};                                                                                                                                                                                                                                                                                                                                                                                                                                          
