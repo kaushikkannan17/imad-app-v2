@@ -24,8 +24,6 @@ var button = document.getElementById("counter");
 };
      
      // Submit name
-     var nameInput = document.getElementById('name');
-     var name = nameInput.value;
      var submit = document.getElementById('submit_btn');
      submit.onclick = function () {
          // Create a request object
@@ -50,6 +48,8 @@ var button = document.getElementById("counter");
         // Not done yet
         };
         // Make the request
-        request.open('GET', 'http://kaushikkannan17.imad.hasura-app.io/submit-name?name=' + name, true);
+     var nameInput = document.getElementById('name');
+     var name = nameInput.value;
+     request.open('GET', 'http://kaushikkannan17.imad.hasura-app.io/submit-name?name=' + name, true);
      request.send(null);
 };                                                                                                                                                                                                                                                                                                                                                                                                                                          
